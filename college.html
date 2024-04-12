@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sakshi College Website</title>
+  <title>College Website</title>
   <style>
     body {
       font-family: Arial, sans-aserif;
@@ -19,7 +19,7 @@
 
     }
 
-    nav {
+    .navDiv {
       background-color: #f8f9fa;
       text-align: center;
       padding: 10px 0;
@@ -72,6 +72,58 @@
       margin: 5px;
       color: white;
     }
+    .navSbartyle{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0px 250px;
+    }
+    .contactbody {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .contactcontainer {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="password"] {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
     }
   </style>
 </head>
@@ -81,10 +133,8 @@
   <header style="display:flex;flex-direction:'row'">
 
     <img src="https://www.bvuniversity.edu.in/images/campus_logo.svg" alt="College Logo" width="150"
-      style="margin-right:" 25px">
-    <div style="    display: flex;
-      flex-direction: column;s
-      flex-direction: column;
+      style="margin-right:'25px'">
+    <div style="    display: flex;      flex-direction: column;  flex-direction: column;
       justify-content: space-evenly;
       flex-grow: 1;
       font-size: larger;">
@@ -94,14 +144,16 @@
       <div> INSTITUTE OF MANAGEMENT,KARAD</div>
     </div>
   </header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-    <a href="#">Login</a>
+  <div class="navDiv">
+  <nav class="navSbartyle">
+    <div onclick="display('home')">Home</div>
+    <div  onclick="display('about')">About</div>
+  
+    <div onclick="display('contact')">Contact</div>
+    <div onclick="display('login')">Login</div>
   </nav>
-  <div class="container backg ">
+  </div>
+  <div id="home" class="container backg ">
 
     <div style="
           font-size: xx-large;
@@ -112,6 +164,99 @@
       width: fit-content;
       "> One Campus, Various Courses, Endless Possibilities</div>
   </div>
+  <div id="about" style="display: none;">
+    <div style="display: flex;align-items: center;flex-direction: column;">
+       <h2>Faculties @ YMIM</h2>
+<div style="display: flex;justify-content: center;flex-direction: row;">
+     <div style="margin: 20px 70px;">
+        <img src="https://www.bvuniversity.edu.in/Uploads/faculty/2424frt_Dr.AjimShaikh.jpg"/>
+        <div>
+          <h2>
+              Prof. Dr. Ajim Shaikh </h2>
+          <p>Director
+              ,
+              Ph.D., MBA</p>
+      </div>
+
+       </div>
+       <div  style="margin:20px 70px;">
+        <img src="https://www.bvuniversity.edu.in/Uploads/faculty/1550frt_Dr.Mrs.AmrutaRamdasSane.jpg" height="332px"/>
+        <div>
+          <h2>
+            Dr. Mrs. Amruta Ramdas Sane </h2>
+          <p>Assistant Professor 
+            ,
+            Ph.D., M.Phil, MMS, LL.B</p>
+      </div>
+       </div>
+      </div>
+
+    </div>
+  <div style="font-size: larger;margin-left: 35px;">
+    	<div >
+        	<h1>Overview</h1>
+        	<blockquote></blockquote>
+      </div>
+    <div style="    font-size: 1.5rem;
+    line-height: 2rem;    color: #6c6565;">
+        Established in 1994, Yashwantrao Mohite Institute of Management, Karad is one of the constituent units of Bharati Vidyapeeth Deemed to be University, Pune. The institute is recognized by the All India Council for Technical Education (AICTE), New Delhi and Govt. of Maharashtra.</blockquote>
+    </div>
+    <div style="display: flex;margin-right: 20px;margin-top:25px;font-size: large;">
+        <div>  <p>
+            The Institute has a high reputation in the academic sphere, and, since its establishment, it has continued to contribute to producing the best management professionals for the industry.</p>
+          <p>
+            Due to its reputation, the institute attracts students from all over the country. It operates two world-class departments – Management, and Computer Applications. The students learn from a team of committed and competent faculty and non-teaching staff.</p>
+          <p>
+            Yashwantrao Mohite Institute of Management is located in Karad, which is a picturesque and quiet locality that provides an appropriate ambience for academic pursuits. The institute is located in a spacious complex having a built-up area of 4059.5 sq.m. A well-equipped library with books and national, international journals, built over an area of more than 1000 sq. ft., is accessible to all of the institute’s students and staff.</p>
+        </div>
+        <div class="col-md-7">
+          <div class="celebrat-slide0">
+            <figure>
+              <img alt="" class="img-fluid w-100" src="https://www.bvuniversity.edu.in/ymimkarad/images/about1.jpg"></figure>
+          </div>
+     
+    
+</div>
+    </div>
+  </div>
+  </div>
+  <div id="contact" style="display: none;">
+
+    <div class="contactcontainer">
+      <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <input type="submit" value="Send Message">
+  </form>
+    </div>
+  </div>
+  <div id="login" style="display: none;">
+    <div class="contactcontainer">
+      <h2>Login</h2>
+      <form id="loginForm" action="#" method="post">
+          <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="Login">
+      </form>
+      
+  </div></div>
   <footer>
     <div style="display:flex;flex-direction:column">
 
@@ -180,3 +325,23 @@
 </body>
 
 </html>
+<script>
+
+function display(item)
+{
+  switch(item)
+  {
+    case 'home':{
+      document.getElementById('login').style.display='none';  ; document.getElementById('home').style.display='block';document.getElementById('contact').style.display='none';document.getElementById('about').style.display='none';
+    }break;
+    case 'about':{
+      document.getElementById('login').style.display='none';  ; document.getElementById('home').style.display='none';document.getElementById('contact').style.display='none';document.getElementById('about').style.display='block';
+    }break;
+    case 'contact':{   document.getElementById('login').style.display='none';      document.getElementById('home').style.display='none';document.getElementById('contact').style.display='block';document.getElementById('about').style.display='none';
+}break;
+    case 'login':{  document.getElementById('login').style.display='block';     document.getElementById('home').style.display='none';document.getElementById('contact').style.display='none';document.getElementById('about').style.display='none';
+}break;
+  }
+}
+
+</script>
